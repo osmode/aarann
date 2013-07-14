@@ -13,6 +13,9 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 NOTE: Configure database name, username and password in file login/db_fns.php
 prior to using code.
 
+Some of the code used to register and authenticate users (in folder 'login') was adapted from Luke Welling 
+and Laura Thompson (PHP AND MYSQL WEB DEVELOPMENT 4th Ed.). All other code (C) 2013 Omar N. Metwally.
+
 Creative Commons License Information:
 
 You are free:
