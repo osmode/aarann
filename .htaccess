@@ -1,0 +1,11 @@
+AuthUserFile /lamp0/web/vhosts/logisome.org/.htpasswd
+AuthName "Password Protected Area"
+AuthType Basic
+
+ServerTokens Prod
+ServerSignature Off
+DefaultType application/x-httpd-php
+
+<limit GET POST>
+require valid-user
+</limit>

@@ -1,0 +1,54 @@
+Enter directly into phpMyAdmin (be sure delimiter field is set to // )
+
+delimiter //
+create procedure dsearch(in in_word varchar(40), in d_name varchar(40))
+begin
+   declare curr_word varchar(40);
+   declare done int default 0;
+   declare c1 cursor for select name from organs;
+       declare continue handler for not found set done=1;
+   
+   open c1;
+   repeat
+       fetch c1 into curr_word;
+       insert into coronary_artery_disease_points
+       (select * from organs where match(name) against (in_word in boolean mode));
+   until done end repeat;
+   close c1;
+   
+end
+//
+
+*Using stored procedure in PHP script:
+	$cxn->query("set @test1='%$words[$i]%'");
+	$cxn->query("CALL dsearch(@test1, @test2)");
+	
+
+//Using concat( ) in combination with stored procedures to essentially use input-defined table names:
+delimiter //
+create procedure dsearch(in in_word varchar(40), in d_name varchar(40))
+begin
+	set @dtable_name=d_name;
+	set @search_word=in_word;
+	set @sql_text=concat('INSERT into ',@dtable_name,'(select * from organs 
+	where match(name) against (',@search_word,'in boolean mode))');
+	prepare stmt from @sql_text;
+    execute stmt;
+    deallocate prepare stmt;  
+end
+//
+
+//Using concat( ) in combination with stored procedures to essentially use input-defined table names:
+delimiter //
+create procedure dsearch(in in_word varchar(40), in d_name varchar(40))
+begin
+	set @dtable_name=d_name;
+	set @search_word=in_word;
+	
+	set @sql_text=concat('INSERT into ',@dtable_name,' (select * from organs 
+	where match(name) against (',@search_word,' in boolean mode))');
+	prepare stmt from @sql_text;
+    execute stmt;
+    deallocate prepare stmt;  
+end
+//

@@ -1,0 +1,104 @@
+#displayresults { font-family: Courier; font-size: 16px }
+body { font-family: Courier; font-size: 16px }
+li, td { font-family: Courier; font-size: 16px }
+a { color: #000000 }
+
+.right { text-align:right; font-family: Courier; font-size:16px }
+.left { text-align:left; white-space: nowrap; font-family: Courier; font-size:16px }
+.tab { margin-left: 40px; }
+.bodytext { text-align:left; font-family: Courier; font-size:16px }
+
+
+#meds_suggest { text-align:left; font-family: Courier; color:#996699; font-size:16px }
+
+#objective_suggest { text-align:left; font-family: Courier; color:#ff9900; font-size:16px }
+
+#subjective_suggest { text-align:left; font-family: Courier; color:#cc9966; font-size:16px }
+
+#vitals_suggest { text-align:left; font-family: Courier; color:#33cc00; font-size:16px }
+
+#history_suggest { text-align:left; font-family: Courier; color:#ff6699; font-size:16px }
+
+#radiology_suggest { text-align:left; font-family: Courier; color:#3399cc; font-size:16px }
+
+
+
+#title1 { font-family: Courier; color:#cc9966 } 
+#title2 { font-family: Courier; color:#3399cc } 
+
+#constitutional { 
+	background-color: #9999ff; font-size: 100%; padding: 5px; font-weight: bold; 
+	font-family: Courier; width: 150px; font-size:16px }
+
+#heent { 
+	background-color: #ffff99; font-size: 100%; padding: 5px; font-weight: bold; 
+	font-family: Courier; width: 150px; font-size:16px }
+
+#neuro { 
+	background-color: #999999; font-size: 100%; padding: 5px; font-weight: bold; 
+	font-family: Courier; width: 150px; font-size:16px }
+
+#psych { 
+	background-color: #99ffff; font-size: 100%; padding: 5px; font-weight: bold; 
+	font-family: Courier; width: 150px; font-size:16px }
+
+#cv { 
+	background-color: #ff6699; font-size: 100%; padding: 5px; font-weight: bold; 
+	font-family: Courier; width: 150px; font-size:16px }
+
+#resp { 
+	background-color: #33cc00; font-size: 100%; padding: 5px; font-weight: bold; 
+	font-family: Courier; width: 150px; font-size:16px }
+	
+#gi { 
+	background-color: #cc9966; font-size: 100%; padding: 5px; font-weight: bold; 
+	font-family: Courier; width: 150px; font-size:16px }
+	
+#gu { 
+	background-color: #ffff99; font-size: 100%; padding: 5px; font-weight: bold; 
+	font-family: Courier; width: 150px; font-size:16px }
+	
+#msk { 
+	background-color: #d0d0d0; font-size: 100%; padding: 5px; font-weight: bold; 
+	font-family: Courier; width: 150px; font-size:16px }
+	
+#breast { 
+	background-color: #ff9900; font-size: 100%; padding: 5px; font-weight: bold; 
+	font-family: Courier; width: 150px; font-size:16px }
+	
+#gyn { 
+	background-color: #3399cc; font-size: 100%; padding: 5px; font-weight: bold; 
+	font-family: Courier; width: 150px; font-size:16px }
+	
+#derm { 
+	background-color: #cc9966; font-size: 100%; padding: 5px; font-weight: bold; 
+	font-family: Courier; width: 150px; font-size:16px }
+	
+#heme { 
+	background-color: #ffffff; font-size: 100%; padding: 5px; font-weight: bold; 
+	font-family: Courier; width: 150px; font-size:16px }
+	
+#immune { 
+	background-color: #ffcccc; font-size: 100%; padding: 5px; font-weight: bold; 
+	font-family: Courier; width: 150px; font-size:16px }
+		
+#endo { 
+	background-color: #ffff99; font-size: 100%; padding: 5px; font-weight: bold; 
+	font-family: Courier; width: 150px; font-size:16px }
+	
+#populate_button { 
+	background-color: #e8e8e8; font-size: 100%; padding: 5px; font-weight: bold; 
+	font-family: Courier; width: 100px; font-size:16px }	
+
+#go_button { 
+	background-color: #e8e8e8; font-size: 100%; padding: 5px; font-weight: bold; 
+	font-family: Courier; width: 100px; font-size:16px }	
+
+#save_button { 
+	background-color: #e8e8e8; font-size: 100%; padding: 5px; font-weight: bold; 
+	font-family: Courier; width: 100px; font-size:16px }	
+
+	
+input[type=checkbox] {width:25px; height:25px;}	
+	
+	
